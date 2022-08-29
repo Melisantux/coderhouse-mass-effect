@@ -851,79 +851,98 @@
       </main>
 
       <footer>
-        <div class="newsletter">
-          <h3>Mantente al día de Mass Effect</h3>
-          <p>
-            Suscríbete para recibir por correo electrónico las últimas
-            novedades, actualizaciones, contenido entre bastidores, ofertas de
-            Mass Effect y mucho más.
-          </p>
-          <form action="#" method="get">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" />
-            <br />
-            <label for="birthDate">Fecha de nacimiento:</label>
-            <input type="date" id="birthDate" name="birthDate" />
-            <br />
-            <label for="country">País:</label>
-            <select id="country" name="country">
-              <option value="Argentina" selected>Argentina</option>
-              <option value="Chile">Chile</option>
-              <option value="Uruguay">Uruguay</option>
-              <option value="Paraguay">Paraguay</option>
-              <option value="Bolivia">Bolivia</option>
-              <option value="Peru">Perú</option>
-              <option value="Colombia">Colombia</option>
-            </select>
-            <div class="wrapper"><button type="button">Regístrate</button></div>
-          </form>
-        </div>
-
-        <div class="company">
-          <span>
-            <img
-              class="EA"
-              src="../assets/img/footer/ea-logo-light.svg"
-              alt=""
-            />
-            <img
-              class="bioware"
-              src="../assets/img/footer/bioware-new-logo-white.png"
-              alt=""
-            />
-          </span>
-        </div>
-
-        <div class="socialNetworks">
-          <h3>Únete a la conversación</h3>
-          <span
-            ><a href="https://www.facebook.com/masseffect" target="_blank"
-              ><img
-                class="fbHeightCorrection"
-                src="../assets/img/footer/facebook_logo.svg"
-                alt="Logo de Facebook"
-            /></a>
-            <a href="https://twitter.com/masseffect" target="_blank"
-              ><img
-                src="../assets/img/footer/twitter_icon.svg"
-                alt="Logo de Twitter"
-            /></a>
-            <a href="https://www.youtube.com/biowaremasseffect" target="_blank"
-              ><img
-                src="../assets/img/footer/youtube_logo_icon.svg"
-                alt="Logo de Youtube"
-            /></a>
-            <a href="https://www.instagram.com/masseffect/" target="_blank"
-              ><img
-                src="../assets/img/footer/instagram_logo_icon.svg"
-                alt="Logo de Instagram"
-            /></a>
-            <a href="https://www.twitch.tv/masseffect" target="_blank"
-              ><img
-                class="twitchHeightCorrection"
-                src="../assets/img/footer/twitch_logo.svg"
-                alt="Logo de Twitch" /></a
-          ></span>
+        <div class="row footer-content">
+          <div class="col s10 m8 l4 offset-s1 offset-m2 newsletter">
+            <h3>Mantente al día de Mass Effect</h3>
+            <p>
+              Suscríbete para recibir por correo electrónico las últimas
+              novedades, actualizaciones, contenido entre bastidores, ofertas y
+              mucho más.
+            </p>
+            <form action="#" method="get" class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <label>Correo electrónico:</label>
+                  <input type="email" id="email" name="email" />
+                </div>
+                <div class="input-field col s12">
+                  <input type="date" id="birthDate" name="birthDate" />
+                  <label>Fecha de nacimiento:</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="country" name="country">
+                    <option value="Argentina" selected>Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Peru">Perú</option>
+                    <option value="Colombia">Colombia</option>
+                  </select>
+                  <label>País:</label>
+                </div>
+                <div class="wrapper">
+                  <button
+                    class="btn waves-effect waves-light"
+                    type="submit"
+                    name="action"
+                  >
+                    Regístrate
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col s10 m6 l4 offset-s1 valign-wrapper company">
+            <span>
+              <img
+                class="EA"
+                src="../assets/img/footer/ea-logo-light.svg"
+                alt=""
+              />
+              <img
+                class="bioware"
+                src="../assets/img/footer/bioware-new-logo-white.png"
+                alt=""
+              />
+            </span>
+          </div>
+          <div class="col s10 m6 l4 offset-s1 valign-wrapper">
+            <div class="socialNetworks">
+              <h3>Únete a la conversación</h3>
+              <span
+                ><a href="https://www.facebook.com/masseffect" target="_blank"
+                  ><img
+                    class="fbHeightCorrection"
+                    src="../assets/img/footer/facebook_logo.svg"
+                    alt="Logo de Facebook"
+                /></a>
+                <a href="https://twitter.com/masseffect" target="_blank"
+                  ><img
+                    src="../assets/img/footer/twitter_icon.svg"
+                    alt="Logo de Twitter"
+                /></a>
+                <a
+                  href="https://www.youtube.com/biowaremasseffect"
+                  target="_blank"
+                  ><img
+                    src="../assets/img/footer/youtube_logo_icon.svg"
+                    alt="Logo de Youtube"
+                /></a>
+                <a href="https://www.instagram.com/masseffect/" target="_blank"
+                  ><img
+                    src="../assets/img/footer/instagram_logo_icon.svg"
+                    alt="Logo de Instagram"
+                /></a>
+                <a href="https://www.twitch.tv/masseffect" target="_blank"
+                  ><img
+                    class="twitchHeightCorrection"
+                    src="../assets/img/footer/twitch_logo.svg"
+                    alt="Logo de Twitch" /></a
+              ></span>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
