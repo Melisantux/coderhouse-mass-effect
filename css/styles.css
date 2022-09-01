@@ -6,8 +6,6 @@
   margin: 0;
 }
 
-/* Background */
-
 html {
   min-height: 100%;
   color-scheme: dark;
@@ -199,7 +197,6 @@ html {
   width: 1px;
   z-index: -1;
 }
-
 .stars:after {
   background: transparent;
   box-shadow: 343px 1717px #fff, 763px 92px #fff, 152px 705px #fff,
@@ -446,7 +443,6 @@ html {
   width: 2px;
   z-index: -1;
 }
-
 .stars2:after {
   background: transparent;
   box-shadow: 1515px 557px #fff, 1109px 1900px #fff, 1807px 96px #fff,
@@ -542,7 +538,6 @@ html {
   width: 3px;
   z-index: -1;
 }
-
 .stars3:after {
   background: transparent;
   box-shadow: 566px 1635px #fff, 1740px 831px #fff, 946px 763px #fff,
@@ -587,8 +582,6 @@ html {
   }
 }
 
-/* Estilos propios */
-
 body {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   color: #ffffff;
@@ -599,11 +592,42 @@ body {
 .container {
   background-color: rgba(9, 12, 21, 0.5);
   margin-inline: auto;
-  width: min(1440px, 90%);
-  max-width: 100%;
+  max-width: 1440px;
+  width: 90%;
+  min-width: 375px;
 }
 
-/* Header */
+.main {
+  background: inherit;
+  padding: 32px 16px;
+}
+
+.main-title {
+  font-size: 32px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  text-align: center;
+  margin-inline: auto;
+  max-width: 55ch;
+}
+
+.secondaryTitle {
+  font-size: 24px;
+  text-align: center;
+  margin-inline: auto;
+  margin-block: 30px;
+  max-width: 50ch;
+  line-height: 1.3;
+}
+
+.section-title {
+  font-size: 24px;
+  text-align: center;
+  margin-inline: auto;
+  margin-block: 45px;
+  max-width: 50ch;
+  line-height: 1.3;
+}
 
 .header-navigation {
   background-color: #090c15;
@@ -622,40 +646,30 @@ body {
 nav {
   background-color: #090c15;
 }
+nav .sidenav-trigger {
+  margin: 0;
+}
 
 .navigation li a {
   color: #ffffff;
   font-size: 18px;
   text-decoration: none;
 }
-
 .navigation li a:hover {
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.3s;
-}
-
-.logoHeader {
-  width: min(200px, 100%);
-  margin: 5px 0 5px 5px;
 }
 
 .sidenav {
   background-color: rgba(0, 0, 0, 0.8);
   width: 40vw;
 }
-
-nav .sidenav-trigger {
-  margin: 0;
-}
-
 .sidenav li:first-child {
   margin-top: 2rem;
 }
-
 .sidenav li:hover {
   background-color: rgba(85, 98, 112, 0.7);
 }
-
 .sidenav li > a {
   font-size: 1.2rem;
   color: #ffffff;
@@ -665,75 +679,11 @@ nav .sidenav-trigger {
   background-color: rgba(0, 0, 0, 0);
 }
 
-/* Main */
-
-.main {
-  background: inherit;
-  padding: 32px 16px;
+.logoHeader {
+  max-width: 200px;
+  width: 100%;
+  margin: 5px 0 5px 5px;
 }
-
-.main-title {
-  font-size: 32px;
-  margin-top: 15px;
-  margin-bottom: 35px;
-  text-align: center;
-  margin-inline: auto;
-  max-width: 55ch;
-}
-
-.youtube-video {
-  aspect-ratio: 16 / 9;
-  display: block;
-  margin-inline: auto;
-  width: min(900px, 100%);
-}
-
-.section-title {
-  font-size: 24px;
-  text-align: center;
-  margin-inline: auto;
-  margin-block: 45px;
-  max-width: 50ch;
-  line-height: 1.3;
-}
-
-.card-container {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-}
-
-.card-index {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-}
-
-.card-index p {
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.card-image,
-.card-image-index {
-  max-width: 100%;
-  object-fit: cover;
-}
-
-.destiny {
-  text-align: center;
-  font-size: 22px;
-  margin-inline: auto;
-  margin-top: 60px;
-  margin-bottom: 15px;
-  max-width: 60ch;
-  font-weight: 600;
-}
-
-/* Footer */
 
 footer {
   width: 100%;
@@ -742,7 +692,6 @@ footer {
   border-radius: 5px;
   margin-bottom: 10px;
 }
-
 footer h3 {
   text-align: center;
   margin-block: 15px;
@@ -760,7 +709,6 @@ footer h3 {
 .newsletter {
   margin-left: 1rem;
 }
-
 .newsletter p {
   margin-left: 5%;
   width: 90%;
@@ -768,13 +716,25 @@ footer h3 {
 
 input[type="text"]:not(.browser-default):focus:not([readonly]),
 input[type="email"]:not(.browser-default):focus:not([readonly]),
-input[type="date"]:not(.browser-default):focus:not([readonly]),
 .select-wrapper input.select-dropdown:focus {
   border-bottom: 1px solid #ff6e6a;
   -webkit-box-shadow: 0 1px 0 0 #ff6e6a;
   box-shadow: 0 1px 0 0 #ff6e6a;
 }
 
+input[type="date"] {
+  cursor: text;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+input[type="date"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #ff6e6a;
+  -webkit-box-shadow: 0 1px 0 0 #ff6e6a;
+  box-shadow: 0 1px 0 0 #ff6e6a;
+}
 input[type="date"]:not(.browser-default):focus:not([readonly]) + label {
   color: #9e9e9e;
 }
@@ -782,7 +742,6 @@ input[type="date"]:not(.browser-default):focus:not([readonly]) + label {
 .dropdown-content {
   background-color: #161616;
 }
-
 .dropdown-content li > a,
 .dropdown-content li > span {
   color: #ffffff;
@@ -792,16 +751,6 @@ input[type="date"]:not(.browser-default):focus:not([readonly]) + label {
   background-color: rgba(255, 110, 106, 0.7);
 }
 
-input[type="date"] {
-  cursor: text;
-}
-
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-}
-
 .wrapper {
   width: 100%;
   display: flex;
@@ -809,31 +758,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: center;
   margin-block: 10px;
 }
-
 .wrapper button {
   transition: all 0.5s ease;
   border-radius: 8px;
-  background-color: rgb(229, 69, 65);
+  background-color: #e54541;
 }
-
 .wrapper button:hover {
   cursor: pointer;
   background-color: #ff6e6a;
 }
-
 .wrapper button:focus {
   background-color: #ff6e6a;
 }
 
 .socialNetworks {
-  grid-area: socialNetworks;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 80%;
 }
-
 .socialNetworks span {
   display: flex;
   justify-content: space-evenly;
@@ -841,7 +785,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   align-items: center;
   width: 50%;
 }
-
 .socialNetworks img {
   width: 30px;
 }
@@ -866,69 +809,102 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   max-width: 100%;
 }
 
-/* Crew Page */
-
-.secondaryTitle {
-  font-size: 24px;
-  text-align: center;
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  display: block;
   margin-inline: auto;
-  margin-block: 30px;
-  max-width: 50ch;
-  line-height: 1.3;
+  max-width: 900px;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.card-index {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.card-index p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.card-image,
+.card-image-index {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.destiny {
+  text-align: center;
+  font-size: 22px;
+  margin-inline: auto;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  max-width: 60ch;
+  font-weight: 600;
 }
 
 .card {
   background-color: #090c15;
   border: 2px solid white;
   border-radius: 6px;
-}
-
-.card-title:not(i) {
-  margin-left: 30px;
-}
-
-.card .card-content {
   padding: 10px;
 }
-
 .card p {
   margin-top: 2rem;
   margin-left: 0.8rem;
   font-size: 1.3rem;
   line-height: 1.5;
 }
-
-.card-action {
-  font-size: 1.2rem;
-}
-
 .card
   .card-action
   a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   text-transform: none;
-  color: rgb(229, 69, 65);
+  color: #e54541;
 }
-
 .card
   .card-action
   a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
   color: #ff6e6a;
 }
-
 .card
   .card-action
   a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):focus {
-  color: rgb(229, 69, 65);
+  color: #e54541;
 }
-
 .card .card-reveal {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card-title:not(i) {
+  margin-left: 30px;
+}
+
+.card-content {
+  padding: 10px;
+}
+.card-content p {
+  text-align: center;
+}
+.card-content p strong {
+  font-weight: bolder;
+}
+
+.card-action {
+  font-size: 1.2rem;
 }
 
 .close-card-icon {
   color: #ffffff;
 }
-
 .close-card-icon:hover {
   color: grey;
 }
@@ -940,16 +916,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .card.medium .card-image {
   max-height: 70%;
 }
-
-.card-content p {
-  text-align: center;
-}
-
-.card-content p strong {
-  font-weight: bolder;
-}
-
-/* Games Page */
 
 .games {
   display: flex;
@@ -963,11 +929,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   align-items: center;
   margin-bottom: 50px;
 }
-
 .gameCard img {
-  width: min(100%, 750px);
+  max-width: 100%;
+  width: 750px;
 }
-
 .gameCard h2 {
   text-align: center;
   font-size: 22px;
@@ -975,7 +940,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   max-width: 60ch;
   font-weight: 600;
 }
-
 .gameCard p,
 .gameCard ul {
   font-size: 18px;
@@ -984,36 +948,33 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-left: 40px;
   margin-top: 10px;
 }
-
 .gameCard li {
   margin-top: 10px;
   max-width: 65ch;
 }
-
-/* Gallery Page */
-
-.gallery img {
-  box-shadow: 0 8px 10px -4px rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-}
-
-.gallery .col {
-  margin-bottom: 20px;
-}
-
-/* Books Page */
 
 .book {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .book h2 {
   text-align: center;
   font-size: 24px;
   max-width: 60ch;
   font-weight: 600;
+}
+.book img {
+  width: 300px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.book p {
+  font-size: 18px;
+  max-width: 65ch;
+  line-height: 1.3;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
 .bookCard {
@@ -1024,27 +985,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-block: 32px;
 }
 
-.book img {
-  width: 300px;
-  border: 1px solid #fff;
-  border-radius: 5px;
+.gallery img {
+  box-shadow: 0 8px 10px -4px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
 }
 
-.book p {
-  font-size: 18px;
-  max-width: 65ch;
-  line-height: 1.3;
-  margin-left: 40px;
-  margin-top: 10px;
+.gallery .col {
+  margin-bottom: 20px;
 }
-
-/* Media Querys */
 
 @media (max-width: 1600px) {
   .bioware {
     width: 160px;
   }
-
   .EA {
     width: 40px;
   }
@@ -1070,40 +1023,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 1024px) {
   .logoHeader {
-    width: min(180px, 100%);
+    max-width: 180px;
+    width: 100%;
   }
-
   .navigation a {
     font-size: 18px;
   }
-
   .main-title {
     font-size: 28px;
   }
-
   .youtube-video {
-    width: min(800px, 85%);
+    max-width: 800px;
+    width: 85%;
   }
-
   .section-title {
     font-size: 20px;
   }
-
   .card-index p {
     font-size: 16px;
     line-height: 1.3;
   }
-
   .card p {
     line-height: 1.3;
   }
-
   .destiny {
     font-size: 18px;
-  }
-
-  footer {
-    grid-template-columns: 1.5fr 1fr 1fr;
   }
 }
 
@@ -1111,36 +1055,28 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .main-title {
     font-size: 24px;
   }
-
   .secondaryTitle {
     font-size: 20px;
   }
-
   .section-title {
     font-size: 18px;
   }
-
   .footer-content {
     display: block;
   }
-
   .socialNetworks {
     margin-bottom: 15px;
   }
-
   .socialNetworks img {
     width: 25px;
     margin-right: 5px;
   }
-
   .fbHeightCorrection {
     width: 30px !important;
   }
-
   .twitchHeightCorrection {
     width: 22px !important;
   }
-
   .company {
     margin-top: 25px;
   }
@@ -1150,27 +1086,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .gameCard h2 {
     font-size: 20px;
   }
-
   .gameCard p {
     font-size: 16px;
   }
-
   .gameCard li {
     font-size: 16px;
   }
-
   .book h2 {
     font-size: 20px;
   }
-
-  .bookCard p {
-    font-size: 16px;
-  }
-
   .bookCard {
     flex-direction: column;
   }
-
+  .bookCard p {
+    font-size: 16px;
+  }
   .bookCard img {
     margin-bottom: 15px;
   }
@@ -1180,30 +1110,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .card-container {
     flex-direction: column;
   }
-
   .card-image-index {
     max-width: 70%;
   }
-
   .card-index p {
     max-width: 40ch;
   }
-
   .EA {
     width: 30px;
     margin-right: 5px;
   }
-
   .bioware {
     width: 120px;
     margin-left: 5px;
   }
-
   .main .gallery .col.m6 {
     width: 70%;
     margin-left: 12vh;
   }
-
   .card p {
     font-size: 1.3rem;
   }
@@ -1216,24 +1140,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     left: auto;
     right: auto;
   }
-
   .card-image-index {
     max-width: 75%;
   }
-
   .card-index p {
     max-width: 35ch;
     font-size: 14px;
   }
-
   .card.medium .card-image {
     max-height: 65%;
   }
-
   .sidenav {
     width: 45vw;
   }
-
   .company {
     margin-top: 5px;
   }

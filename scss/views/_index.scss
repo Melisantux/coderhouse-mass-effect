@@ -1,0 +1,43 @@
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin-inline: auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.card-index {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+
+.card-image,
+.card-image-index {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.destiny {
+    text-align: center;
+    font-size: 22px;
+    margin-inline: auto;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    max-width: 60ch;
+    font-weight: 600;
+}
