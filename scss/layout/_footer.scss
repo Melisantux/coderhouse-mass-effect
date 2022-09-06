@@ -32,9 +32,9 @@ footer {
 input[type="text"]:not(.browser-default):focus:not([readonly]),
 input[type="email"]:not(.browser-default):focus:not([readonly]),
 .select-wrapper input.select-dropdown:focus {
-    border-bottom: 1px solid #ff6e6a;
-    -webkit-box-shadow: 0 1px 0 0 #ff6e6a;
-    box-shadow: 0 1px 0 0 #ff6e6a;
+    border-bottom: 1px solid $actions-details-red;
+    -webkit-box-shadow: 0 1px 0 0 $actions-details-red;
+    box-shadow: 0 1px 0 0 $actions-details-red;
 }
 
 input[type="date"] {
@@ -47,9 +47,9 @@ input[type="date"] {
     }
 
     &:not(.browser-default):focus:not([readonly]) {
-        border-bottom: 1px solid #ff6e6a;
-        -webkit-box-shadow: 0 1px 0 0 #ff6e6a;
-        box-shadow: 0 1px 0 0 #ff6e6a;
+        border-bottom: 1px solid $actions-details-red;
+        -webkit-box-shadow: 0 1px 0 0 $actions-details-red;
+        box-shadow: 0 1px 0 0 $actions-details-red;
 
         & + label {
             color: #9e9e9e;
@@ -77,40 +77,30 @@ input[type="date"] {
 }
 
 .wrapper {
+    @include flexbox(row, center, center);
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-block: 10px;
 
     button {
-        transition: all 0.5s ease;
-        border-radius: 8px;
-        background-color: rgb(229, 69, 65);
+        @extend %btn-style;
 
         &:hover {
             cursor: pointer;
-            background-color: #ff6e6a;
+            background-color: $actions-details-red;
         }
 
         &:focus {
-            background-color: #ff6e6a;
+            background-color: $actions-details-red;
         }
     }
 }
 
 .socialNetworks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(column, center, center);
     width: 80%;
 
     span {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        align-items: center;
+        @include flexbox(row, space-evenly, center);
         width: 50%;
     }
 

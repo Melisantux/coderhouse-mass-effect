@@ -1,5 +1,5 @@
 .card {
-    background-color: #090c15;
+    background-color: $background;
     border: 2px solid white;
     border-radius: 6px;
     padding: 10px;
@@ -15,14 +15,14 @@
         a {
             &:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
                 text-transform: none;
-                color: rgb(229, 69, 65);
+                color: $details-red;
 
                 &:hover {
-                    color: #ff6e6a;
+                    color: $actions-details-red;
                 }
 
                 &:focus {
-                    color: rgb(229, 69, 65);
+                    color: $details-red;
                 }
             }
         }

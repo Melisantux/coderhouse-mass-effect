@@ -8,16 +8,14 @@
 
 .card-container {
     display: flex;
-    gap: 40px;
     justify-content: center;
+    gap: 40px;
 }
 
 .card-index {
-    display: flex;
+    @include flexbox(column, flex-start, center);
     flex: 1;
-    flex-direction: column;
     gap: 16px;
-    align-items: center;
 
     p {
         font-size: 20px;

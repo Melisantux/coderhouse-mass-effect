@@ -1,13 +1,9 @@
 .games {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(column, flex-start, center);
 }
 
 .gameCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(column, flex-start, center);
     margin-bottom: 50px;
 
     img {

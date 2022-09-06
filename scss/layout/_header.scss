@@ -1,9 +1,8 @@
 .header-navigation {
-    background-color: #090c15;
-    align-items: center;
+    background-color: $background;
+    @include flexbox(row, flex-start, center);
     border-bottom: 3px solid #fff;
     border-radius: 5px;
-    display: flex;
     min-height: 90px;
     padding: 8px 25px;
     position: sticky;
@@ -13,7 +12,7 @@
 }
 
 nav {
-    background-color: #090c15;
+    background-color: $background;
 
     .sidenav-trigger {
         margin: 0;
