@@ -1,0 +1,17 @@
+1 - Cree etiquetas meta keywords en todos los HTML:
+- Index: "Mass Effect, Videojuegos, RPG, Shooter, Bioware".
+- Books: "Mass Effect, Libros, Ciencia ficción, Ópera espacial".
+- Crew: "Mass Effect, Videojuegos, Ciencia ficción, Ópera espacial, Aliens, NPC".
+_ Gallery: "Mass Effect, Videojuegos, Fotos, Galeria de fotos".
+- Games: "Mass Effect, Videojuegos, RPG, Shooter"
+
+2 - Cree etiquetas meta description en todos los HTML:
+- Index: "Adéntrate en el universo de Mass Effect y entérate de las últimas novedades."
+- Books: "Conoce los libros que amplían el universo de Mass Effect."
+- Crew: "Conoce a los personajes que te acompañarán en tu aventura por el épico universo del Mass Effect."
+_ Gallery: "Revive momentos clave de la historia del Mass Effect."
+- Games: "Explora los videojuegos que componen la trilogía original de Mass Effect.".
+
+3 - Agregué la clase .hide-title para que todas las páginas contengan un h1, incluso las que no lo tienen visible (como la página de galería).
+
+4 - Modifiqué los titulos para que ahora figuren como Mass Effect | el nombre de la página en la que se encuentra el usuario.
