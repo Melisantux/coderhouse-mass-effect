@@ -110,6 +110,9 @@ body {
   max-width: 50ch;
   line-height: 1.3; }
 
+.section-title-divider {
+  font-size: 1.3em; }
+
 .hide-title {
   font-size: 0;
   width: 1px;
@@ -362,7 +365,8 @@ input[type="date"] {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 50px; }
+  margin-bottom: 35px;
+  max-width: 750px; }
   .gameCard img {
     max-width: 100%;
     width: 750px; }
@@ -375,13 +379,60 @@ input[type="date"] {
   .gameCard p,
   .gameCard ul {
     font-size: 18px;
-    max-width: 65ch;
+    max-width: 70ch;
     line-height: 1.3;
-    margin-left: 40px;
-    margin-top: 10px; }
+    margin-left: 10px;
+    margin-top: 12px; }
   .gameCard li {
     margin-top: 10px;
     max-width: 65ch; }
+  .gameCard section .subsection-container dt {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 12px; }
+  .gameCard section .quote {
+    margin-top: 12px; }
+    .gameCard section .quote blockquote {
+      border-left: 5px solid #e54541; }
+  .gameCard section .metacritic-area {
+    margin-top: 12px; }
+    .gameCard section .metacritic-area .metascore {
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center;
+      float: left; }
+    .gameCard section .metacritic-area .high {
+      background-color: #66cc33; }
+    .gameCard section .metacritic-area .metalogo {
+      background-image: url(../../assets/img/games/metacritic-icon.svg);
+      background-repeat: no-repeat;
+      height: 35px;
+      width: 35px;
+      margin-left: 10px;
+      margin-top: 5px;
+      float: left; }
+    .gameCard section .metacritic-area .wordmark {
+      float: left;
+      width: 180px; }
+      .gameCard section .metacritic-area .wordmark .metacritic {
+        font-family: "Motiva Sans", Sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        margin-left: 2px;
+        font-size: 20px;
+        line-height: 26px;
+        float: left; }
+      .gameCard section .metacritic-area .wordmark .metalink {
+        font-family: "Motiva Sans", Sans-serif;
+        font-weight: normal;
+        padding: 0px;
+        position: relative;
+        left: 2px;
+        clear: left; }
 
 .book {
   display: flex;
