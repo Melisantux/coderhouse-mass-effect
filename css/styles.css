@@ -365,7 +365,7 @@ input[type="date"] {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   max-width: 750px; }
   .gameCard img {
     max-width: 100%;
@@ -404,6 +404,11 @@ input[type="date"] {
         color: #e54541; }
   .gameCard section .metacritic-area {
     margin-top: 12px; }
+    .gameCard section .metacritic-area a {
+      color: #ff6e6a;
+      transition: all 0.5s ease; }
+      .gameCard section .metacritic-area a:hover {
+        color: #e54541; }
     .gameCard section .metacritic-area .metascore {
       width: 45px;
       height: 45px;
