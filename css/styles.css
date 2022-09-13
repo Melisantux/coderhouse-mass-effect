@@ -385,7 +385,10 @@ input[type="date"] {
     margin-top: 12px; }
   .gameCard li {
     margin-top: 10px;
-    max-width: 65ch; }
+    max-width: 70ch;
+    list-style-type: disc !important; }
+  .gameCard section strong {
+    font-weight: 600; }
   .gameCard section .subsection-container dt {
     font-weight: bold;
     font-size: 16px;
@@ -394,6 +397,11 @@ input[type="date"] {
     margin-top: 12px; }
     .gameCard section .quote blockquote {
       border-left: 5px solid #e54541; }
+    .gameCard section .quote a {
+      color: #ff6e6a;
+      transition: all 0.5s ease; }
+      .gameCard section .quote a:hover {
+        color: #e54541; }
   .gameCard section .metacritic-area {
     margin-top: 12px; }
     .gameCard section .metacritic-area .metascore {

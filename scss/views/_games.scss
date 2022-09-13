@@ -31,10 +31,15 @@
 
     li {
         margin-top: 10px;
-        max-width: 65ch;
+        max-width: 70ch;
+        list-style-type: disc !important;
     }
 
     section {
+        strong {
+            font-weight: 600;
+        }
+
         .subsection-container {
             dt {
                 font-weight: bold;
@@ -47,6 +52,15 @@
             margin-top: 12px;
             blockquote {
                 border-left: 5px solid $details-red;
+            }
+
+            a {
+                color: $actions-details-red;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    color: $details-red;
+                }
             }
         }
         .metacritic-area {
