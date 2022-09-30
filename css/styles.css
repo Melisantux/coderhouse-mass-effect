@@ -92,7 +92,8 @@ body {
   margin-bottom: 35px;
   text-align: center;
   margin-inline: auto;
-  max-width: 55ch; }
+  max-width: 55ch;
+  font-weight: 600; }
 
 .secondaryTitle {
   font-size: 24px;
@@ -456,7 +457,8 @@ input[type="date"] {
     text-align: center;
     font-size: 24px;
     max-width: 60ch;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-block: 20px; }
   .book img {
     width: 300px;
     border: 1px solid #fff;
